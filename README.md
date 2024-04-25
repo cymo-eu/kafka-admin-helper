@@ -23,12 +23,12 @@ More rules can be added with simple coding.
 
 ## Configurations
 
-| CLI Parameter          | Shorthand | Env var                  |
-|------------------------|-----------|--------------------------|
-| kafkaConfig            | config    | KAFKA_CONFIG_FILE        | 
-| stateFileLocation      | file      | STATE_FILE_LOCATION      |
-| stateDirectoryLocation | dir       | STATE_DIRECTORY_LOCATION |
-| plan/apply/import      | -p/-a/-i  | MODE                     |
+| CLI Parameter          | Shorthand | Env var                     |
+|------------------------|-----------|-----------------------------|
+| kafkaConfig            | config    | KAFKA_CONFIG_FILE           | 
+| stateFileLocation      | file      | STATE_FILE_LOCATION         |
+| stateDirectoryLocation | dir       | STATE_DIRECTORY_LOCATION    |
+| plan/apply/import      | -p/-a/-i  | MODE (expects long version) |
 
 ## Development
 
