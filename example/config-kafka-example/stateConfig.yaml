@@ -1,0 +1,9 @@
+# Some global configs
+acls:
+  - host: '*'
+    name: users
+    operation: WRITE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:98765
+    resourceType: TOPIC

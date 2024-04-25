@@ -1,0 +1,57 @@
+acls:
+  - host: '*'
+    name: '_schemas'
+    operation: READ
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '_schemas'
+    operation: WRITE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '_schemas'
+    operation: DESCRIBE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '_schemas'
+    operation: DESCRIBE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '_schemas'
+    operation: DESCRIBE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '__consumer_offsets'
+    operation: DESCRIBE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: '_schemas'
+    operation: DESCRIBE_CONFIGS
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: TOPIC
+  - host: '*'
+    name: 'schema-registry'
+    operation: ALL
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:12345 #schema-registry
+    resourceType: GROUP

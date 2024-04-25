@@ -1,0 +1,22 @@
+acls:
+  - host: '*'
+    name: '*'
+    operation: READ
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:10101010 #Kafka-datalake-sink
+    resourceType: TOPIC
+  - host: '*'
+    name: '*'
+    operation: DESCRIBE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:10101010 #Kafka-datalake-sink
+    resourceType: TOPIC
+  - host: '*'
+    name: 'kafka-datalake-sink'
+    operation: ALL
+    patternType: PREFIXED
+    permissionType: ALLOW
+    principal: User:10101010 #Kafka-datalake-sink
+    resourceType: GROUP

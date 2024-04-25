@@ -1,0 +1,9 @@
+acls:
+  - host: '*'
+    name: orders
+    operation: ALL
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:20202020 #OrderApp
+    resourceType: TOPIC
+  

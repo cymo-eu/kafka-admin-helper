@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: 'decrypt kafka access config'
+  args: 
+  - kms 
+  - decrypt 
+  - --location=global 
+  - --keyring=ci-secrets
+  - --key=kafka-admin
+  - --plaintext-file=./kafkaConfig.properties 
+  - --ciphertext-file=./kafkaConfig.properties.enc
+- name: 'eu.gcr.io/cymo-util/kafka-admin-helper:a33b277'
+  env:
+  - 'KAFKA_CONFIG_FILE=/workspace/kafkaConfig.properties'
+  - 'STATE_FILE_LOCATION=/workspace/stateConfig.yaml'
+  - 'STATE_DIRECTORY_LOCATION=/workspace/state-configs'
+  - 'MODE=plan'
