@@ -1,0 +1,36 @@
+acls:
+  - host: '*'
+    name: orders
+    operation: WRITE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:1299503
+    resourceType: TOPIC
+  - host: '*'
+    name: market.trades
+    operation: WRITE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:1299611
+    resourceType: TOPIC
+  - host: '*'
+    name: '*'
+    operation: READ
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:2668478
+    resourceType: TOPIC
+  - host: '*'
+    name: '*'
+    operation: DESCRIBE_CONFIGS
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:2668560
+    resourceType: TOPIC
+  - host: '*'
+    name: '*'
+    operation: WRITE
+    patternType: LITERAL
+    permissionType: ALLOW
+    principal: User:2668560
+    resourceType: TOPIC
