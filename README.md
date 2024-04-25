@@ -13,16 +13,6 @@ There are 3 modes
 - APPLY: Will execute what plan reports.
 - IMPORT: Will read the current cluster state and print it as output. This mode will also report topics.
 
-## Use
-run with configuration parameters.
-Defective configuration will be printed to output.
-```
--i
--k
-/Users/bryan/Clients/cymo/development/kafka-admin-util/kafkaConfig.properties
--sf
-/Users/bryan/Clients/cymo/development/kafka-admin-util/stateConfig.yaml
-```
 ## Development
 
 Functions like any maven project. 
